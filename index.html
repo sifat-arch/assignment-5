@@ -3,7 +3,402 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- daisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Emergency-HotLine</title>
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body class="max-w-[1940px] mx-auto">
+    <header>
+      <!-- navbar starts here -->
+      <nav class="flex justify-between px-[60px] py-[24px]">
+        <div class="div-left flex gap-4 items-center">
+          <div class="w-[50px]">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <p class="text-[#006747] text-2xl font-bold">
+            Emergency <br />
+            Service
+          </p>
+        </div>
+
+        <div class="div-right flex gap-5 items-center">
+          <div
+            class="flex gap-3 items-center bg-[#41ff6b1a] py-[14px] px-[20px] rounded-full"
+          >
+            <span>0</span>
+            <img src="./images/heart.png" alt="" class="w-[30px]" />
+          </div>
+          <div
+            class="flex gap-3 bg-[#41ff6b1a] py-[14px] px-[20px] rounded-full"
+          >
+            <span>0</span>
+            <img src="./images/coin.png" alt="" class="w-[24px]" />
+          </div>
+          <button
+            class="btn px-[36px] py-[28px] rounded-full bg-[#00A63E] text-white"
+          >
+            <span>1</span>
+            Copy
+          </button>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <section
+        class="h-full bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center space-y-[10px] py-[20px]"
+      >
+        <div class="w-[92px] mx-auto">
+          <img src="./images/logo.png " alt="" />
+        </div>
+
+        <h2 class="text-white text-[40px]">Emergency Service Directory</h2>
+        <p class="text-white text-[20px]">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </section>
+    </header>
+
+    <main class="bg-[#41ff6b1a] grid grid-cols-12 gap-6 p-[60px]">
+      <!-- card parent left -->
+      <section class="col-span-9 grid grid-cols-3 gap-6">
+        <!-- card 1 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/emergency.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">National Emergency Number</p>
+            <p class="text-[18px] text-gray-500">National Emergency</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">999</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/police.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Police Helpline Number</p>
+            <p class="text-[18px] text-gray-500">Police</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">999</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/fire-service.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Fire Service Number</p>
+            <p class="text-[18px] text-gray-500">Fire Service</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">999</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card1 4 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/ambulance.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Ambulance Service</p>
+            <p class="text-[18px] text-gray-500">Ambulance</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">1994-999999</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card-5 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/brac.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Women & Child Helpline</p>
+            <p class="text-[18px] text-gray-500">Women & Child Helpline</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">999</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/police.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Anti-Corruption Helpline</p>
+            <p class="text-[18px] text-gray-500">Anti-Corruption</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">106</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card  7 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/emergency.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Electricity Helpline</p>
+            <p class="text-[18px] text-gray-500">Electricity Outage</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">16216</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/brac.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Brac Helpline</p>
+            <p class="text-[18px] text-gray-500">Brac</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">16445</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              NGO
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div class="bg-white p-[32px] rounded-lg shadow-sm">
+          <div class="flex items-center justify-between">
+            <div class="w-[60px]">
+              <img src="./images/Bangladesh-Railway.png" alt="" />
+            </div>
+
+            <div class="text-[24px]">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <p class="text-[25px] font-bold">Bangladesh Railway Helpline</p>
+            <p class="text-[18px] text-gray-500">Bangladesh Railway</p>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-[24px] font-semibold">163</p>
+            <button class="bg-gray-200 px-[24px] py-[10px] rounded-full">
+              All
+            </button>
+          </div>
+
+          <div class="flex mt-6 gap-2 w-full">
+            <button class="px-[60px] py-3 border border-gray-400 rounded-lg">
+              <span><i class="fa-regular fa-copy"></i> <span>Copy</span></span>
+            </button>
+            <button
+              class="px-[60px] py-[12px] rounded-lg bg-[#00A63E] text-white"
+            >
+              <span> <i class="fa-solid fa-phone"></i> <span>Call</span></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- card-parent right -->
+
+      <section class="col-span-3"></section>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>

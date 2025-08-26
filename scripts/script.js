@@ -69,3 +69,33 @@ for (const btn of callBtn) {
 document.querySelector(".clear-btn").addEventListener("click", function () {
   getId("card-container").innerHTML = "";
 });
+
+// copy functionality
+
+const copyButton = document.getElementsByClassName("copy");
+
+for (const btn of copyButton) {
+  btn.addEventListener("click", function (e) {
+    const copyBtn = e.currentTarget;
+
+    const contactNumber = Number(
+      copyBtn.parentNode.parentNode.children[2].children[0].innerText
+    );
+
+    // alert(`${contactNumber} is copied`);
+
+    // ✅ clipboard এ কপি করা
+    navigator.clipboard
+      .writeText(contactNumber)
+      .then(() => {
+        alert(`${contactNumber} is copied`);
+      })
+      .catch((err) => {
+        alert("Failed to copy: " + err);
+      });
+
+    const copyButtonCount = Number(getId("copy-spen").innerText);
+
+    getId("copy-spen").innerText = copyButtonCount + 1;
+  });
+}

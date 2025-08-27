@@ -48,7 +48,7 @@ for (const btn of callBtn) {
     div.innerHTML = `
        
          <div
-            class="bg-[#fafafa] flex justify-between items-center p-4 runded-lg mb-4"
+            class="bg-[#fafafa] flex gap-[8px] justify-between items-center p-4 runded-lg mb-4"
           >
             <div>
               <h1 class="text-[18px] font-semibold">${title}</h1>
@@ -78,13 +78,12 @@ for (const btn of copyButton) {
   btn.addEventListener("click", function (e) {
     const copyBtn = e.currentTarget;
 
-    const contactNumber = Number(
-      copyBtn.parentNode.parentNode.children[2].children[0].innerText
-    );
+    const contactNumber =
+      copyBtn.parentNode.parentNode.children[2].children[0].innerText;
 
     // alert(`${contactNumber} is copied`);
 
-    // ✅ clipboard এ কপি করা
+    // clipboard এ কপি করা
     navigator.clipboard
       .writeText(contactNumber)
       .then(() => {
